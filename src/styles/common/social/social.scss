@@ -1,0 +1,25 @@
+.social {
+    display: flex;
+    a {
+        width: 70px;
+        line-height: 53px;
+        background-color: #fff;
+        margin-right: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 22px;
+        }
+        // &.social__whatsapp {
+        //     background-image: url("../img/svg/whatsapp.svg");
+        // }
+        // &.social__viber {
+        //     background-image: url("../img/svg/viber.svg");
+        // }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

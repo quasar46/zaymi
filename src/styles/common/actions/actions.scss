@@ -1,0 +1,120 @@
+.actions {
+    margin-bottom: 110px;
+    .container {
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        padding: 60px 0;
+    }
+}
+.actions__row {
+    padding: 0 50px;
+    &:last-child {
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+}
+
+.actions__center {
+    height: 2px;
+    background-color: #fff;
+}
+
+.actions__dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 55px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    span {
+        font-size: 21px;
+        font-weight: 500;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 21px;
+        border-radius: 50%;
+        background-color: #fff;
+        &:first-child {
+            background-color: $green;
+            color: #fff;
+        }
+    }
+    .actions__line {
+        display: flex;
+        flex: 1 0 auto;
+        p {
+            height: 2px;
+            flex: 1 0 auto;
+            background-color: #fff;
+        }
+
+        // &--gradient {
+        //     background-image: linear-gradient(90deg, $green, #fff);
+        // }
+    }
+    p.actions__green {
+        background-color: $green;
+        height: 3px;
+        border-radius: 10px;
+    }
+}
+
+.actions__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-bottom: 70px;
+}
+
+.actions__form {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+
+    p {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 30px;
+        a {
+            color: $green;
+        }
+    }
+    input[type="submit"] {
+        font-size: 17px;
+        align-self: center;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $green;
+        border: none;
+        border-radius: 10px;
+        line-height: 53px;
+        padding: 0 30px;
+        cursor: pointer;
+    }
+}
+
+.actions__inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    input {
+        // max-width: 350px;
+        flex: 0 1 350px;
+        height: 53px;
+        padding: 0 30px;
+        margin-right: 20px;
+        border: 1px solid #ececec;
+        outline: none;
+        border-radius: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:focus,
+        &:hover {
+            border-color: $green;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+extends common/layout-hero
+block content
+    header
+        .header.header__main
+            .container 
+                a.header__logo(href="index.html")
+                    img(src="img/svg/logo.svg" alt="")
+                nav.header__nav
+                    ul
+                        li
+                            a(href="") главная
+                        li
+                            a(href="") займы под птс
+                        li
+                            a(href="") займы без залога
+                        li
+                            a(href="") условия
+                        li
+                            a(href="") акции
+                        li
+                            a(href="") документы
+
+                a.header__phone.header__phone--green(href="tek:88005506330") 8 800 550 63 30
+
+            .hero 
+                .container
+                    .hero__aside
+                        h1.hero__title
+                            span Займы
+                            span без залога
+                            span в курской области
+
+                        form.hero__form(action="get") 
+                            input(type="text" placeholder="Введите Ваш телефон")
+                            input(type="submit" value="Оставить заявку") 
+                            .hero__social.social
+                                a.social__whatsapp(href="") 
+                                    img(src="img/svg/whatsapp.svg" alt="")
+                                a.social__viber(href="") 
+                                    img(src="img/svg/viber.svg" alt="")
+
+                    .hero__calc.calc
+                        h2.calc__title
+                            | Расчитайте ваш займ 
+                            br
+                            | и получите решение
+                        .calc__form 
+                            .calc__inner
+                                p
+                                    span Сумма
+                                    span 50 000 
+                                        | 
+                                        i ₽
+                                .calc__slider 
+                                    .calc__dot.calc__dot--sum
+                                p
+                                    span Срок
+                                    span 30 дней
+                                .calc__slider 
+                                    .calc__dot.calc__dot--date
+                            button.calc__button Получить 
+                                |
+                                span 50 000
+                                | 
+                                i  ₽
+                            .calc__footer
+                                p
+                                    span К возврату
+                                    span 50 000 
+                                        |
+                                        i ₽
+                                p
+                                    span Переплата
+                                    span 5 000 
+                                        | 
+                                        i ₽
+
+    .advantages 
+        .container
+            h2.title.title__inner Почему мы?
+            p Наши преимущества, по которым стоит выбрать именно Нас
+            ul.advantages__list 
+                li
+                    img(src="img/svg/icon1.svg" alt="")
+                    h3 ЧЕСТНЫЕ  УСЛОВИЯ
+                    p У нас нет штрафов и скрытых условий. Если мы предлагаем неделю в подарок, то это именно первая неделя без любых доплат - на 7-й день пользования займом клиент оплатит только сумму займа и ни копейки больше.
+                li
+                    img(src="img/svg/icon2.svg" alt="")
+                    h3 БЕЗ СТРАХОВОК  И ПОРУЧИТЕЛЕЙ
+                    p Мы не задаем лишних вопросов и не требуем поручителей. А еще мы никогда не навязываем клиентам покупку страховки.
+                li
+                    img(src="img/svg/icon3.svg" alt="")
+                    h3 РЕАЛЬНО БЫСТРЫЙ ЗАЕМ
+                    p Около получаса уходит на одобрение заявки. Деньги выдаем в день обращения.
+
+    .actions
+        .container
+            .actions__row
+                h2.title.title__inner Как это работает?
+                p Все очень просто, вам потребуется всего 3 действия
+                .actions__dots
+                    span 1
+                    .actions__line
+                        p.actions__green
+                        p 
+                    span 2
+                    .actions__line
+                        p 
+                        p 
+                    span 3
+                ul.actions__list
+                    li ОФОРМИТЕ ЗАЯВКУ
+                    li ДОЖДИТЕСЬ ЗВОНКА МЕНЕДЖЕРА
+                    li ПОЛУЧИТЕ ДЕНЬГИ
+            .actions__center
+            .actions__row 
+                form.actions__form(action="get")
+                    .actions__inputs 
+                        input(type="text" placeholder="Введите Ваш телeфон*")
+                        input(type="text" placeholder="Как к Вам обращаться")
+                    p
+                        | Нажимая на кнопку «Оставить заявку», я соглашаюсь 
+                        a(href="#")  с условиями на передачу персональных данных
+                    input(type="submit" value="Оставить заявку")
